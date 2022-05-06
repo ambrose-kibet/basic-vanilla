@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400|Lora:400");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+} /*16px*/
+:root {
+  /* colors  primary*/
+  --white: #fef6e4;
+  /* grey */
+  --grey-50: #f9fafb;
+  --grey-100: #f3f4f6;
+  --grey-200: #e5e7eb;
+  --grey-300: #d1d5db;
+  --grey-400: #9ca3af;
+  --grey-500: #6b7280;
+  --grey-600: #4b5563;
+  --grey-700: #374151;
+  --grey-800: #111827;
+  /* other VArs */
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1170px;
+  --fixed-width: 600px;
+  /* box shadow */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-5: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background: var(--grey-200);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+.title {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+.title > h2 {
+  margin-top: 0rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.img-container {
+  max-width: 450px;
+  margin: 0.25rem;
+  border-radius: 0.3rem;
+}
+.img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.tabs-container {
+  max-width: 400px;
+  margin: 0.25rem;
+  min-width: 330px;
+  display: flexbox;
+  align-items: center;
+}
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  background: var(--grey-400);
+  font-weight: 900;
+  border: none;
+  border-radius: 0.2rem;
+}
+.text-container {
+  display: none;
+}
+.btn-active {
+  background: white;
+}
+.active-text {
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
